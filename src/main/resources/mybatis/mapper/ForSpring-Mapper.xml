@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="club.ragdollhouse.LingFeng.mapper.ForSpringMapper">
+    <resultMap id="BaseResultMap" type="club.ragdollhouse.LingFeng.entity.TestForSpring" >
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="name" property="name" jdbcType="VARCHAR" />
+        <result column="age" property="age" jdbcType="INTEGER" />
+        <result column="habbit" property="habbit" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <select id="getAll" resultMap="BaseResultMap">
+        SELECT id,NAME,age,habbit FROM testforspring
+    </select>
+</mapper>

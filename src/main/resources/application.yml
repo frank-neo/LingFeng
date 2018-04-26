@@ -1,0 +1,55 @@
+#服务端设置
+server:
+  port: 8080
+  #ip,域名都设置在address
+  address: 192.168.1.112
+  session:
+    timeout: 30
+  tomcat:
+    max-threads: 0
+    uri-encoding: UTF-8
+  context-path: /LingFeng/demo
+
+#HTTP编码设置
+spring:
+  http:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+#数据库设置（如何解决MySQL在高版本需要指明是否进行SSL连接问题：useSSL=true）
+  datasource:
+    url: jdbc:mysql://192.168.1.112:3306/forspring?characterEncoding=utf8&useSSL=true
+    username: lishaoxiong
+    password: lsx8399LSX
+    driver-class-name: com.mysql.jdbc.Driver
+
+  #定位模板的目录
+  mvc:
+    view:
+      prefix: classpath:/templates/
+  #返回页面的后缀
+      suffix: .html
+  #spring boot thymeleaf 标签未关闭报错(若闭合性配置)
+  thymeleaf:
+    cache: false
+    mode: LEGACYHTML5
+
+#日志设置
+logging:
+# 日志文件,绝对路径或相对路径（可以设置文件名称）
+  file: D:\idea-workspace\LingFeng\log\log.log
+  # 保存日志文件目录路径（文件名称：spring.log）
+  #path: E:\Users\83990\eclipse-workspace\SpringbootWeb\SpringbootWeb\src\main\webapp\logfiles
+  level:
+    com:
+      favorites: DEBUG
+    org:
+      springframework:
+        web: INFO
+      hibernate: ERROR
+
+#mybatis.mapper-locations=classpath:mybatis/mapper/*.xml
+mybatis:
+  mapper-locations: classpath:mybatis\mapper\*.xml
