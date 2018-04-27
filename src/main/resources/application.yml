@@ -2,13 +2,13 @@
 server:
   port: 8080
   #ip,域名都设置在address
-  address: 192.168.1.112
+  address: localhost
   session:
     timeout: 30
   tomcat:
     max-threads: 0
     uri-encoding: UTF-8
-  context-path: /LingFeng/demo
+  #context-path: /LingFeng/demo
 
 #HTTP编码设置
 spring:
