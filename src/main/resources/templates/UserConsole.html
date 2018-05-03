@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>用户控制台</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/daohang.css">
+    <script src="js/jquery.min.js-1.12.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<!--导航栏-->
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar" style="background-color: rgba(0, 0, 0, 0.788);margin-bottom: 0px;">
+            <a class="navbar-brand" style="color: rgb(250, 248, 249);font-size: 150%" href="#">
+                <span class="glyphicon glyphicon-leaf" style="top: 5px;"></span>&ensp;
+                <b style="margin-bottom: 5px">凌风</b>
+            </a>
+        </nav>
+    </div>
+</div>
+
+<div class="container-fluid" style="height: 94%;">
+    <div class="row" style="height: 100%;">
+        <div class="col-md-2"
+             style="padding-left: 0px;padding-right: 0px; background-color: rgba(216, 211, 205, 0.932);height: 100%;">
+            <ul id="main-nav" class="nav nav-tabs nav-stacked" style="margin-top: 5px;">
+                <li class="active">
+                    <a href="#">
+                        <i class="glyphicon glyphicon-th-large"></i> 首页
+                    </a>
+                </li>
+                <li>
+                    <a href="#systemSetting" class="nav-header collapsed" data-toggle="collapse">
+                        <i class="glyphicon glyphicon-cog"></i> 个人资料
+                        <span class="pull-right glyphicon glyphicon-chevron-down"></span>
+                    </a>
+                    <ul id="systemSetting" class="nav nav-list collapse secondmenu" style="height: 0px;">
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-user"></i>个人信息</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-th-list"></i>修改资料</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-asterisk"></i>修改密码</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-edit"></i>我的银行</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="glyphicon glyphicon-eye-open"></i>会员升级</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+        <div class="col-md-10"
+             style="background-color: rgb(232, 236, 215); overflow-y:auto; overflow-x:auto; height: 100%;">
+            主窗口
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

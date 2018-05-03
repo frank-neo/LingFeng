@@ -1,8 +1,10 @@
 body {
-    background-image: url('../img/login_background.jpg');
+    /*<!--background-image: url('../img/login_background.jpg');
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 100%;
+    background-size: 100%;-->
+     */
+    background-color: #c2bbaf;
 }
 
 .wrapper {
