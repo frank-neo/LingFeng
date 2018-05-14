@@ -18,7 +18,7 @@ spring:
       enabled: true
       force: true
 
-#数据库设置（如何解决MySQL在高版本需要指明是否进行SSL连接问题：useSSL=true）?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false
+#数据库设置（如何解决MySQL在高版本需要指明是否进行SSL连接问题：useSSL=true，当一个连接的空闲时间超过8小时后，MySQL 就会断开该连接，而连接池则以为该被断开的连接依然有效）?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false
   datasource:
     url: jdbc:mysql://192.168.1.112:3306/forspring?characterEncoding=utf8&useSSL=true
     username: lishaoxiong
